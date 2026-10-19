@@ -111,6 +111,10 @@ console.log(copia);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const frutti = ["mela", "banana"];
+const verdure = ["carota", "spinaci"];
+const unione = [...frutti, ...verdure];
+console.log(unione);
 
 /* ESERCIZIO 6 — Spread su oggetto
    prodotto = { nome: "Cuffie", prezzo: 79.99 }
@@ -119,6 +123,9 @@ console.log(copia);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const prodotto = { nome: "Cuffie", prezzo: 79.99 };
+const nuovoProdotto = {...prodotto, disponibile: true};
+console.log(nuovoProdotto);
 
 /* ESERCIZIO 7 — forEach
    Stampa tutti gli utenti nel formato "- Nome Cognome (città)".
@@ -126,6 +133,9 @@ console.log(copia);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+utenti.forEach((utente) => {
+
+});
 
 /* ESERCIZIO 8 — map a stringhe
    Usa map per creare nomiCompleti = ["Mario Rossi", "Anna Bianchi", ...].
