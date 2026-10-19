@@ -206,6 +206,16 @@ console.log(b);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const c = utenti.sort((a, b) => a.eta - b.eta)
+	.map(u => u.eta);
+console.log(c);
+
+const d = utenti.sort((a, b) => {
+	if (a.nome < b.nome) return -1;
+	if (a.nome > b.nome) return true;
+})
+	.map(u => u.nome);
+console.log(d);
 
 /* ESERCIZIO 15 — Chaining
    Componi una catena di metodi che:
@@ -216,3 +226,13 @@ console.log(b);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const catena = utenti 
+.filter(utente => utente.attivo === true)
+.map(utente => `${utente.nome} ${utente.cognome}`)
+.sort((a, b) => {
+	if (a.nome < b.nome) return -1;
+	if (a.nome > b.nome) return true;
+});
+
+console.log(catena);
+
