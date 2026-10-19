@@ -167,6 +167,8 @@ console.log(utentiPlus[0]);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const attivi = utenti.filter(utente => utente.attivo === true);
+console.log(attivi);
 
 /* ESERCIZIO 11 — filter combinato
    Usa filter per ottenere solo gli utenti maggiorenni (eta >= 18) che vivono a Milano.
@@ -174,6 +176,8 @@ console.log(utentiPlus[0]);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const combinato = utenti.filter(utente => utente.eta >= 18 && utente.città === 'Milano');
+console.log(combinato);
 
 /* ESERCIZIO 12 — find
    Usa find per trovare il primo utente con id === 4.
