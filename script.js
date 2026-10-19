@@ -194,6 +194,11 @@ console.log(trovato);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const a = utenti.reduce((acc, u) => acc + u.eta / utenti.length, 0);
+console.log(a);
+
+const b = utenti.reduce((acc, u) => acc + u.attivo, 0);
+console.log(b);
 
 /* ESERCIZIO 14 — sort
    a) Ordina gli utenti per eta crescente. Stampa l'array di nomi nell'ordine.
