@@ -215,7 +215,7 @@ console.log(c);
 
 const d = utenti.sort((a, b) => {
 	if (a.nome < b.nome) return -1;
-	if (a.nome > b.nome) return true;
+	if (a.nome > b.nome) return 1;
 })
 	.map(u => u.nome);
 console.log(d);
