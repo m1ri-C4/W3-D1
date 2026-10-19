@@ -63,8 +63,11 @@ const utenti = [
    Chiamala con quadrato(5) e stampa il risultato.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA */  
+const myQuadrato = document.querySelector('#quadrato');
 const quadrato = n => n * n;
+
+myQuadrato.innerHTML += `${quadrato(5)}`;
 console.log(quadrato(5));
 
 /* ESERCIZIO 2 — Destructuring di oggetto
