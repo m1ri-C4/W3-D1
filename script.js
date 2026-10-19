@@ -232,10 +232,6 @@ console.log(d);
 const catena = utenti 
 .filter(utente => utente.attivo === true)
 .map(utente => `${utente.nome} ${utente.cognome}`)
-.sort((a, b) => {
-	if (a.nome < b.nome) return -1;
-	if (a.nome > b.nome) return true;
-});
-
+.sort();
 console.log(catena);
 
