@@ -124,7 +124,7 @@ console.log(unione);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const prodotto = { nome: "Cuffie", prezzo: 79.99 };
-const nuovoProdotto = {...prodotto, disponibile: true};
+const nuovoProdotto = { ...prodotto, disponibile: true };
 console.log(nuovoProdotto);
 
 /* ESERCIZIO 7 — forEach
@@ -134,7 +134,7 @@ console.log(nuovoProdotto);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 utenti.forEach((utente) => {
-
+	console.log(`${utente.nome} ${utente.cognome} (${utente.città})`);
 });
 
 /* ESERCIZIO 8 — map a stringhe
@@ -143,6 +143,8 @@ utenti.forEach((utente) => {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const nomiCompleti = utenti.map(utente => `${utente.nome} ${utente.cognome}`);
+console.log(nomiCompleti);
 
 /* ESERCIZIO 9 — map a oggetti
    Usa map per creare utentiPlus: array di oggetti dove ogni utente ha tutte
@@ -153,6 +155,11 @@ utenti.forEach((utente) => {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const utentiPlus = utenti.map(utente => ({
+	...utenti,
+	descrizione: `${utente.nome} ${utente.cognome}, ${utente.città}`
+}));
+console.log(utentiPlus[0]);
 
 /* ESERCIZIO 10 — filter attivi
    Usa filter per ottenere solo gli utenti con attivo: true.
