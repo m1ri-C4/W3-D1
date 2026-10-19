@@ -185,6 +185,8 @@ console.log(combinato);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const trovato = utenti.find(utente => utente.id === 4);
+console.log(trovato);
 
 /* ESERCIZIO 13 — reduce
    a) Usa reduce per calcolare l'età media (somma età / numero utenti). Stampa.
